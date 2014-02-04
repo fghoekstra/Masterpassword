@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hoekstra_Masterpassword>
+            <version>0.1.0</version>
+        </Hoekstra_Masterpassword>
+    </modules>
+    <global>
+        <models>
+            <hoekstra_masterpassword>
+                <class>Hoekstra_Masterpassword_Model</class>
+                <resourceModel>hoekstra_masterpassword_resource</resourceModel>
+            </hoekstra_masterpassword>
+            <hoekstra_masterpassword_resource>
+                <class>Hoekstra_Masterpassword_Model_Resource</class>
+            </hoekstra_masterpassword_resource>
+            <customer>
+                <rewrite>
+                    <customer>Hoekstra_Masterpassword_Model_Customer_Customer</customer>
+                </rewrite>
+            </customer>
+        </models>
+    </global>
+
+</config>
